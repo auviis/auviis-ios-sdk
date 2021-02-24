@@ -1,3 +1,7 @@
+//
+//  Viavoice.hpp
+//https://sora.shiguredo.jp/features#feature11-block
+
 #ifndef Viavoice_hpp
 #define Viavoice_hpp
 #include <iostream>

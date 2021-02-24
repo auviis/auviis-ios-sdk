@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,168 +14,168 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qL9-IC-YVS">
-                                <rect key="frame" x="8" y="414" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="8" y="315" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="3.Send Text"/>
                                 <connections>
                                     <action selector="sendTextChat:" destination="dkx-z0-nzr" eventType="touchUpInside" id="m3t-cV-anD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boL-51-8f1">
-                                <rect key="frame" x="114" y="413" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="114" y="314" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="4.Record Voice"/>
                                 <connections>
                                     <action selector="recordVoice:" destination="dkx-z0-nzr" eventType="touchUpInside" id="t16-F3-5KC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ere-CU-VnG">
-                                <rect key="frame" x="114" y="375" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="114" y="276" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="1.Start Network"/>
                                 <connections>
                                     <action selector="start:" destination="dkx-z0-nzr" eventType="touchUpInside" id="vtn-42-CXk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T59-dc-Kkk">
-                                <rect key="frame" x="17" y="488" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="17" y="389" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="7.Enable Voice"/>
                                 <connections>
                                     <action selector="enableVoiceStream:" destination="dkx-z0-nzr" eventType="touchUpInside" id="KF1-Hm-xzd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0b-zz-7Cp">
-                                <rect key="frame" x="143" y="488" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="143" y="389" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="8.Disable Voice"/>
                                 <connections>
                                     <action selector="disableVoiceStream:" destination="dkx-z0-nzr" eventType="touchUpInside" id="xgu-90-qPd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uD9-hF-AR5">
-                                <rect key="frame" x="229" y="376" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="229" y="277" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="2.Join Group Chat"/>
                                 <connections>
                                     <action selector="join:" destination="dkx-z0-nzr" eventType="touchUpInside" id="RVG-1t-Svd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHW-Yf-1Bp">
-                                <rect key="frame" x="229" y="413" width="122" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="229" y="314" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="5.Stop Record"/>
                                 <connections>
                                     <action selector="stopRecord:" destination="dkx-z0-nzr" eventType="touchUpInside" id="hcC-va-R1E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni3-nu-Srw">
-                                <rect key="frame" x="21" y="452" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="21" y="353" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="6.Play Record"/>
                                 <connections>
                                     <action selector="playRecord:" destination="dkx-z0-nzr" eventType="touchUpInside" id="yz6-ZX-1D0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-eK-E2I">
-                                <rect key="frame" x="16" y="526" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="16" y="427" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="9.Mute Send"/>
                                 <connections>
                                     <action selector="muteSend:" destination="dkx-z0-nzr" eventType="touchUpInside" id="zzn-Ip-WbD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4z-3H-cEp">
-                                <rect key="frame" x="134" y="526" width="127" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="134" y="427" width="127" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="10.Unmute Send"/>
                                 <connections>
                                     <action selector="unmuteSend:" destination="dkx-z0-nzr" eventType="touchUpInside" id="IQc-gX-epv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvW-1b-Heq">
-                                <rect key="frame" x="4" y="281" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Speaker Out"/>
-                                <connections>
-                                    <action selector="speakerOut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="8F8-yg-WfT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9H-tr-601">
-                                <rect key="frame" x="-1" y="376" width="81" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="-1" y="277" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="0.Init"/>
                                 <connections>
                                     <action selector="init:" destination="dkx-z0-nzr" eventType="touchUpInside" id="eoY-Ha-uaU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mia-6X-hBc">
-                                <rect key="frame" x="12" y="213" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="27" y="153" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="One click start"/>
                                 <connections>
                                     <action selector="oneClickStart:" destination="dkx-z0-nzr" eventType="touchUpInside" id="w3u-hb-oGF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTY-rg-Udg">
-                                <rect key="frame" x="19" y="564" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="19" y="465" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="11.Stop Network"/>
                                 <connections>
                                     <action selector="stop:" destination="dkx-z0-nzr" eventType="touchUpInside" id="Fae-NY-5uL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg2-GY-5tX">
-                                <rect key="frame" x="144" y="212" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="156" y="153" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="One click stop"/>
                                 <connections>
                                     <action selector="oneClickStop:" destination="dkx-z0-nzr" eventType="touchUpInside" id="mzb-KS-KKx"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="Free Talk" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-8C-IsS">
-                                <rect key="frame" x="87" y="242" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="85" y="200" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="freeTalk:" destination="BYZ-38-t0r" eventType="valueChanged" id="X1y-8X-o81"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free talk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEv-VW-jEN">
-                                <rect key="frame" x="17" y="249" width="53" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="27" y="208" width="53" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvl-9f-jhG">
-                                <rect key="frame" x="153" y="243" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="156" y="200" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="Push To Talk"/>
                                 <connections>
                                     <action selector="pushToTalkOff:" destination="dkx-z0-nzr" eventType="touchUpInside" id="Lf6-xU-hNn"/>
                                     <action selector="pushToTalkOn:" destination="dkx-z0-nzr" eventType="touchDown" id="UiM-MW-FCj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-zc-0Fc">
+                                <rect key="frame" x="130" y="238" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" title="Mic Out"/>
+                                <connections>
+                                    <action selector="micOut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="VAO-4Z-sHS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvW-1b-Heq">
+                                <rect key="frame" x="12" y="239" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" title="Speaker Out"/>
+                                <connections>
+                                    <action selector="speakerOut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="8F8-yg-WfT"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yCO-81-i76">
-                                <rect key="frame" x="21" y="37" width="333" height="168"/>
+                                <rect key="frame" x="21" y="42" width="278" height="103"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-zc-0Fc">
-                                <rect key="frame" x="122" y="281" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Mic Out"/>
-                                <connections>
-                                    <action selector="micOut:" destination="dkx-z0-nzr" eventType="touchUpInside" id="VAO-4Z-sHS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

@@ -4,6 +4,8 @@
 {
     int oneclick;
 }
+- (void) updateChatContent: (NSString*) text;
+- (NSString *) getChatContent;
 @property (nonatomic, assign) IBOutlet UISwitch *freeTalkSwitch;
 @property (nonatomic, assign) IBOutlet UIButton *pushToTalkButton;
 @property (nonatomic, assign) IBOutlet UIButton *initButton;
