@@ -1,0 +1,11 @@
+{
+    "cmd": 10002,
+    "json_objects":[
+        {"name":"svr_id","type":"Int32"},
+        {"name":"role_career","type":"Int8"},
+        {"name":"role_sex","type":"Int8"},
+        {"name":"role_name","type":"string"},
+        {"name":"role_channel","type":"string"},
+        {"name":"role_via","type":"Int8"}
+    ]
+}

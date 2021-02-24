@@ -1,0 +1,7 @@
+{
+"cmd": 1002,
+"json_objects":[
+    {"name":"channel_id","type":"Int64"},
+    {"name":"channel_name","type":"string"}
+ ]
+}

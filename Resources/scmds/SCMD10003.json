@@ -1,0 +1,5 @@
+{"cmd": 10003,
+    "json_objects":[
+        {"name":"flag","type":"Int8"}
+    ]
+}

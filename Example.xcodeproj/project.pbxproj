@@ -12,6 +12,7 @@
 		7C4D610A24C0AE4300C13926 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4D610924C0AE4300C13926 /* libc++.tbd */; };
 		7C4D610C24C0AE4A00C13926 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4D610B24C0AE4A00C13926 /* libz.tbd */; };
 		7C7216F824C4385400ABBEFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7216F624C4385400ABBEFC /* AVFoundation.framework */; };
+		7C97964625E6841800C35C96 /* libAuviis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C97964525E6841800C35C96 /* libAuviis.a */; };
 		7C9B4BC624C445A600C265DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9B4BC524C445A600C265DE /* AudioToolbox.framework */; };
 		7CA2899824C03CC700018219 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2899724C03CC700018219 /* AppDelegate.mm */; };
 		7CA2899B24C03CC700018219 /* SceneDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2899A24C03CC700018219 /* SceneDelegate.mm */; };
@@ -21,7 +22,6 @@
 		7CA289A624C03CCE00018219 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CA289A424C03CCE00018219 /* LaunchScreen.storyboard */; };
 		7CA289A924C03CCE00018219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA289A824C03CCE00018219 /* main.m */; };
 		7CA289BC24C0481900018219 /* SDKDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7CA289BB24C0481800018219 /* SDKDelegate.mm */; };
-		7CC6B73A25E65D5000AF8FA4 /* libAuviis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC6B73825E65D5000AF8FA4 /* libAuviis.a */; };
 		7CFAB3A024CA7AFF0029AEA5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFAB39F24CA7AFF0029AEA5 /* CoreAudio.framework */; };
 		7CFAB3A824CA7DF70029AEA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFAB3A724CA7DF70029AEA5 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,8 @@
 		7C4D610924C0AE4300C13926 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7C4D610B24C0AE4A00C13926 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7C7216F624C4385400ABBEFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7C97964425E6841800C35C96 /* auviis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = auviis.hpp; sourceTree = "<group>"; };
+		7C97964525E6841800C35C96 /* libAuviis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAuviis.a; sourceTree = "<group>"; };
 		7C9B4BC524C445A600C265DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7CA2899324C03CC700018219 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA2899624C03CC700018219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,8 +50,6 @@
 		7CA289A824C03CCE00018219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CA289BA24C0481800018219 /* SDKDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKDelegate.h; sourceTree = "<group>"; };
 		7CA289BB24C0481800018219 /* SDKDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SDKDelegate.mm; sourceTree = "<group>"; };
-		7CC6B73825E65D5000AF8FA4 /* libAuviis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAuviis.a; path = libs/Auviis/libAuviis.a; sourceTree = "<group>"; };
-		7CC6B73925E65D5000AF8FA4 /* auviis.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = auviis.hpp; path = libs/Auviis/auviis.hpp; sourceTree = "<group>"; };
 		7CFAB39F24CA7AFF0029AEA5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		7CFAB3A724CA7DF70029AEA5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFAB3A824CA7DF70029AEA5 /* Accelerate.framework in Frameworks */,
-				7CC6B73A25E65D5000AF8FA4 /* libAuviis.a in Frameworks */,
+				7C97964625E6841800C35C96 /* libAuviis.a in Frameworks */,
 				7CFAB3A024CA7AFF0029AEA5 /* CoreAudio.framework in Frameworks */,
 				7C9B4BC624C445A600C265DE /* AudioToolbox.framework in Frameworks */,
 				7C7216F824C4385400ABBEFC /* AVFoundation.framework in Frameworks */,
@@ -81,13 +81,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7C97964325E6841800C35C96 /* Auviis */ = {
+			isa = PBXGroup;
+			children = (
+				7C97964425E6841800C35C96 /* auviis.hpp */,
+				7C97964525E6841800C35C96 /* libAuviis.a */,
+			);
+			name = Auviis;
+			path = libs/Auviis;
+			sourceTree = "<group>";
+		};
 		7CA2898A24C03CC700018219 = {
 			isa = PBXGroup;
 			children = (
+				7CA2899524C03CC700018219 /* Example */,
 				7CA289BD24C048C300018219 /* Frameworks */,
 				7CA2899424C03CC700018219 /* Products */,
 				7C1FA35224C0593C00CDDC81 /* Resources */,
-				7CA2899524C03CC700018219 /* Example */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,12 +132,11 @@
 		7CA289BD24C048C300018219 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CC6B73925E65D5000AF8FA4 /* auviis.hpp */,
-				7CC6B73825E65D5000AF8FA4 /* libAuviis.a */,
+				7C97964325E6841800C35C96 /* Auviis */,
 				7CFAB3A724CA7DF70029AEA5 /* Accelerate.framework */,
+				7CFAB39F24CA7AFF0029AEA5 /* CoreAudio.framework */,
 				7C9B4BC524C445A600C265DE /* AudioToolbox.framework */,
 				7C7216F624C4385400ABBEFC /* AVFoundation.framework */,
-				7CFAB39F24CA7AFF0029AEA5 /* CoreAudio.framework */,
 				7C4D610924C0AE4300C13926 /* libc++.tbd */,
 				7C4D610424C0AE3100C13926 /* libcrypto.a */,
 				7C4D610624C0AE3100C13926 /* libssl.a */,
@@ -285,7 +294,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/libs\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -336,7 +348,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/libs\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -351,18 +366,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S64RW26J76;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs/openssl/prebuilt/ios",
 					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/libs/openssl/prebuilt/ios",
 					"$(PROJECT_DIR)/libs/Auviis",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auviis.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auviis.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,18 +389,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S64RW26J76;
-				INFOPLIST_FILE = Example/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/libs/openssl/prebuilt/ios",
 					"$(PROJECT_DIR)/libs",
+					"$(PROJECT_DIR)/libs/openssl/prebuilt/ios",
 					"$(PROJECT_DIR)/libs/Auviis",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.auviis.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.auviis.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

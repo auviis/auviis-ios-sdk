@@ -1,0 +1,8 @@
+{"cmd": 1002,
+    "json_objects":[
+        {"name":"error_code","type":"Int8"},
+        {"name":"channel_id","type":"Int64"},
+        {"name":"member_count","type":"Int64"},
+        {"name":"msg","type":"string"}
+    ]
+}
