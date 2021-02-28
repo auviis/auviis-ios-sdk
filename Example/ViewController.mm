@@ -12,7 +12,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     oneclick = 0;
+    self.chatScreen.delegate = self;
 }
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction{
+    // Do whatever you want here
+    NSString*  newStr = [URL absoluteString];
+    NSRange range = [newStr  rangeOfString : @"playvoicemsg:"];
+    BOOL found = ( range.location != NSNotFound );
+    if(found){
+        NSString *msg_id = [newStr componentsSeparatedByString:@"playvoicemsg:"][1];
+        Auviis::playVoiceMessage([msg_id UTF8String]);
+    }
+    return NO; // Return NO if you don't want iOS to open the link
+}
+- (BOOL)textView:(UITextView *)textView shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction{
+    return NO; // Return NO if you don't want iOS to open the link
+}
+//- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
+//    // Do whatever you want here
+//    NSLog(@"%@", URL); // URL is an instance of NSURL of the tapped link
+//    return YES; // Return NO if you don't want iOS to open the link
+//}
 - (IBAction) init:(id)sender{
 //    self.chatScreen.text =@"init";
     SDKDelegate::getInstance()->setOneClick(false);
@@ -31,10 +51,12 @@
     Auviis::sendTextChat(123,"hello");
 }
 - (IBAction) recordVoice:(id)sender{
-//    self.chatScreen.text =@"recordVoice";
+    [self updateChatContent: @"recording voice message"];
+    Auviis::recordVoice();
 }
 - (IBAction) stopRecord:(id)sender{
-//    self.chatScreen.text =@"stopRecord";
+    [self updateChatContent: @"stop recording voice message"];
+    Auviis::stopRecord();
 }
 - (IBAction) playRecord:(id)sender{
 //    self.chatScreen.text =@"playRecord";
@@ -64,12 +86,12 @@
     Auviis::outputToDefault();
 }
 - (IBAction) stop:(id)sender{
-    self.chatScreen.text =@"sdk stopped";
+    [self updateChatContent: @"sdk stopped"];
     Auviis::stop();
 }
 
 - (IBAction) oneClickStart:(id)sender{
-    self.chatScreen.text =@"sdk is coneccting ...";
+    [self updateChatContent: @"sdk is connecting ..."];
     SDKDelegate::getInstance()->setOneClick(true);
     SDKDelegate::getInstance()->init();
     [self.freeTalkSwitch setEnabled:TRUE];
@@ -80,7 +102,7 @@
     [self.freeTalkSwitch setEnabled:FALSE];
 //    self.chatScreen.text =@"oneClickStop";
     Auviis::stop();
-    self.chatScreen.text =@"sdk stopped";
+    [self updateChatContent: @"sdk stopped"];
 }
 - (IBAction) freeTalk:(id)sender{
     BOOL on = [self.freeTalkSwitch isOn];
@@ -103,9 +125,28 @@
     Auviis::muteSend();
 }
 - (void) updateChatContent: (NSString*) text{
-    self.chatScreen.text = text;
+    NSString *txt = [NSString stringWithFormat:@"<br/>%@", text];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc]
+                                                   initWithData: [@"" dataUsingEncoding:NSUnicodeStringEncoding]
+                                                        options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                                             documentAttributes: nil
+                                                          error: nil
+                                         ];
+    [attributedString appendAttributedString:self.chatScreen.attributedText];
+    NSAttributedString *attributedStringAppend = [[NSMutableAttributedString alloc]
+                                  initWithData: [txt dataUsingEncoding:NSUnicodeStringEncoding]
+                                       options: @{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType }
+                            documentAttributes: nil
+                                         error: nil
+                        ];
+    [attributedString appendAttributedString:attributedStringAppend];
+//    NSLog(@"txt:%@",txt);
+    self.chatScreen.attributedText = attributedString;
+    
+    NSRange range = NSMakeRange(self.chatScreen.attributedText.string.length - 1, 1);
+    [self.chatScreen scrollRangeToVisible:range];
 }
 - (NSString *) getChatContent{
-    return self.chatScreen.text;
+    return self.chatScreen.attributedText.string;
 }
 @end

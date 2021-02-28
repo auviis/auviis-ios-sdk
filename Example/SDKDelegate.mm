@@ -42,7 +42,7 @@ void SDKDelegate::init(){
 
 void SDKDelegate::onError(int code, std::string reason){
     std::cout << reason << std::endl;
-    updateChatContent(@"sdk connection error, retrying ...");
+    updateChatContent([[NSString alloc] initWithFormat:@"sdk connection error: %s", reason.c_str()]);
 }
 void SDKDelegate::onDisconnect(int code, std::string reason){
     std::cout << reason << std::endl;
@@ -81,7 +81,9 @@ void SDKDelegate::onTextMessage(int64_t sender_id, int64_t channel_id, std::stri
 }
 void SDKDelegate::onVoiceMessage(int64_t sender_id, int64_t channel_id, std::string msg_id){
     std::cout << "onVoiceMessage:" << msg_id;
-    Auviis::playVoiceMessage(msg_id);
+//    Auviis::playVoiceMessage(msg_id);
+    NSString *txt = [[NSString alloc] initWithFormat:@"Channel 123 get voice msg:\n <a href = 'playvoicemsg:%s'>Play Voice Message</a>",msg_id.c_str()];
+    updateChatContent(txt);
 }
 void SDKDelegate::onVoiceMessageReady(int code, long record_id){
     std::cout << "onVoiceMessageReady";
