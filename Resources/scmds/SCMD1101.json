@@ -1,6 +1,0 @@
-{"cmd": 1101,
-    "json_objects":[
-        {"name":"error_code","type":"Int8"},
-        {"name":"msg","type":"string"}
-    ]
-}

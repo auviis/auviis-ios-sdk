@@ -1,7 +1,0 @@
-{
-"cmd": 1100,
-"json_objects":[
-    {"name":"channel_id","type":"Int64"},
-    {"name":"message","type":"string"}
- ]
-}

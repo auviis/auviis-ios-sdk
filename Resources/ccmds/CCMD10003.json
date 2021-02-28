@@ -1,8 +1,0 @@
-{
-    "cmd": 10003,
-    "json_objects":[
-        {"name":"role_id","type":"Int64"},
-        {"name":"unixtime","type":"Int32"},
-        {"name":"tstamp","type":"string"}
-    ]
-}
